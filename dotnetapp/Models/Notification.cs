@@ -9,6 +9,5 @@ public DateTime CreatedAt {get; set;}
 
 public User? User {get; set;}
 public Inquiry? Inquiry {get; set;}
-public string? ProofDocument {get; set;}
-
+public PlanApplication? PlanApplication {get; set;}
 public SavingsPlan? SavingsPlan {get; set;}
