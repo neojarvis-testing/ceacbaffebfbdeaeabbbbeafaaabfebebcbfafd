@@ -1,0 +1,2 @@
+[ApiController]
+[Route("api/")]
