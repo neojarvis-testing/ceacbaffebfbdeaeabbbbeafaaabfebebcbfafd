@@ -1,0 +1,12 @@
+using Microsoft.AspNetCore.Mvc;
+
+[ApiController]
+[Route("api/[controller]")]
+public class AuthenticationController: ControllerBase
+{
+    private readonly AuthService _authService;
+    public AuthenticationController(AuthService _authService)
+    {
+        _authService = authService;
+    }
+}
