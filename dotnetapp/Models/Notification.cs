@@ -1,10 +1,14 @@
 public int NotificationId {get; set;}
-public int UserId {get; set;}
-public SavingsPlanId {get; set;}
-public decimal AppliedAmount {get; set;}
-public string Status {get; set;}
-public DateTime ApplicationDate {get; set;}
-public string? Remarks {get; set;}
-public string? ProofDocument {get; set;}
+public int? UserId {get; set;}
+public int? SavingsPlanId {get; set;}
+public int? PlanApplicationId {get;set;}
+public int? InquiryId {get;set;}
+public string Message {get; set;}
+public bool IsRead {get; set;}
+public DateTime CreatedAt {get; set;}
+
 public User? User {get; set;}
+public Inquiry? Inquiry {get; set;}
+public string? ProofDocument {get; set;}
+
 public SavingsPlan? SavingsPlan {get; set;}
