@@ -5,4 +5,10 @@ import {Button} from '@/clientcomponents/button';
 import {Input} from '@/clientcomponents/input';
 
 const regUserDB = [];
-const
+
+const regUserRoles = 
+{
+    CLIENT: 'client',
+    FINANCIALCONSULTANT: 'financialConsultant',
+    MANAGER: 'manager'
+};
