@@ -12,3 +12,17 @@ const regUserRoles =
     FINANCIALCONSULTANT: 'financialConsultant',
     MANAGER: 'manager'
 };
+
+function App()
+{
+    const [user, setUser] = useState(null);
+    return(
+     <Router>
+        <Routes>
+            <Route path="/" element={user? <Navigate to="/homepage"/>: <Login setUser={setUser}/>}/>
+            <Route path="/signup" element={<SignUp/>}/>        
+            }>/>
+        </Routes>
+     </Router>   
+    );
+}
