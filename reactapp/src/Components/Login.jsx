@@ -16,12 +16,15 @@ const regUserRoles =
 function App()
 {
     const [user, setUser] = useState(null);
+
     return(
      <Router>
         <Routes>
             <Route path="/" element={user? <Navigate to="/homepage"/>: <Login setUser={setUser}/>}/>
-            <Route path="/signup" element={<SignUp/>}/>        
-            }>/>
+            <Route path="/signup" element={<SignUp />}/>
+            <Route path="/homepage" element={
+                user ? <HomePage user={user}/>: <Navigate to="/"/>
+            }/>
         </Routes>
      </Router>   
     );
