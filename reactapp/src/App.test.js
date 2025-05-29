@@ -15,6 +15,6 @@ test('allows login with correct credentials', () =>
     fireEvent.change(screen.getByPlaceHolderText(/Name/i), {target: {value: 'Test User'}});
     fireEvent.change(screen.getByPlaceHolderText(/Email/i), {target: {value: 'test@example.com'}});
     fireEvent.change(screen.getByPlaceHolderText(/Password/i), {target: {value: 'password'}});
-    fireEvent.click(screen.getByText())
-}
-)
+    fireEvent.click(screen.getByText(/SignUp/i));
+    expect(screen.getByText(/Sucessfully Signed Up/i)).toBeInTheDocument();
+});
