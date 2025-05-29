@@ -8,5 +8,5 @@ function SignUp()
         regUserDB.push(form);
         setRegistered(true);
     };
-    
+    return (null);
 }
